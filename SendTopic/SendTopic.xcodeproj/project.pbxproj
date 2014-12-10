@@ -14,6 +14,8 @@
 		5C00439B1A3585DE0019AA6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C00439A1A3585DE0019AA6C /* Images.xcassets */; };
 		5C00439E1A3585DE0019AA6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C00439C1A3585DE0019AA6C /* LaunchScreen.xib */; };
 		5C0043AA1A3585DE0019AA6C /* SendTopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0043A91A3585DE0019AA6C /* SendTopicTests.m */; };
+		5C8E7FFD1A383301000BE1F6 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E7FFC1A383301000BE1F6 /* UserLocationViewController.m */; };
+		5C8E7FFF1A383389000BE1F6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8E7FFE1A383389000BE1F6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		5C0043A31A3585DE0019AA6C /* SendTopicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendTopicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0043A81A3585DE0019AA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0043A91A3585DE0019AA6C /* SendTopicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendTopicTests.m; sourceTree = "<group>"; };
+		5C8E7FFB1A383301000BE1F6 /* UserLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
+		5C8E7FFC1A383301000BE1F6 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
+		5C8E7FFE1A383389000BE1F6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8E7FFF1A383389000BE1F6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		5C0043811A3585DE0019AA6C = {
 			isa = PBXGroup;
 			children = (
+				5C8E7FFE1A383389000BE1F6 /* CoreLocation.framework */,
 				5C00438C1A3585DE0019AA6C /* SendTopic */,
 				5C0043A61A3585DE0019AA6C /* SendTopicTests */,
 				5C00438B1A3585DE0019AA6C /* Products */,
@@ -85,6 +92,8 @@
 				5C0043921A3585DE0019AA6C /* AppDelegate.m */,
 				5C0043941A3585DE0019AA6C /* ViewController.h */,
 				5C0043951A3585DE0019AA6C /* ViewController.m */,
+				5C8E7FFB1A383301000BE1F6 /* UserLocationViewController.h */,
+				5C8E7FFC1A383301000BE1F6 /* UserLocationViewController.m */,
 				5C0043971A3585DE0019AA6C /* Main.storyboard */,
 				5C00439A1A3585DE0019AA6C /* Images.xcassets */,
 				5C00439C1A3585DE0019AA6C /* LaunchScreen.xib */,
@@ -221,6 +230,7 @@
 			files = (
 				5C0043961A3585DE0019AA6C /* ViewController.m in Sources */,
 				5C0043931A3585DE0019AA6C /* AppDelegate.m in Sources */,
+				5C8E7FFD1A383301000BE1F6 /* UserLocationViewController.m in Sources */,
 				5C0043901A3585DE0019AA6C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +422,7 @@
 				5C0043AF1A3585DE0019AA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C0043B01A3585DE0019AA6C /* Build configuration list for PBXNativeTarget "SendTopicTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				5C0043B21A3585DE0019AA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
