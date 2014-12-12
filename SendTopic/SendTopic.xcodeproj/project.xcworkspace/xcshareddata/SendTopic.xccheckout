@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>000BEB06-736A-4415-898A-3550A53BCE87</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SendTopic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ED89C2C89A9FCA68AF515CF979D75999205BF208</key>
+		<string>https://github.com/GeorgeHY/SendTopicDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SendTopic/SendTopic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ED89C2C89A9FCA68AF515CF979D75999205BF208</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/GeorgeHY/SendTopicDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ED89C2C89A9FCA68AF515CF979D75999205BF208</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ED89C2C89A9FCA68AF515CF979D75999205BF208</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SendTopicDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

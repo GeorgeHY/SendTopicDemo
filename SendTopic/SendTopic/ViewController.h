@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,strong) UILabel * latitudeLabel;
+@property (nonatomic,strong) UILabel * longitudeLabel;
+
 
 @end
 

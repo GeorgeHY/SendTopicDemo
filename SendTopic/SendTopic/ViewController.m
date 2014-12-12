@@ -13,6 +13,7 @@
 @property (nonatomic,strong) UITextView *tv;
 @property (nonatomic,strong) UILabel *titleLabel;
 
+
 @end
 
 @implementation ViewController
@@ -43,6 +44,23 @@
     self.titleLabel.backgroundColor = [UIColor greenColor];
     [self.view addSubview: self.titleLabel];
     
+//    [self.view setNeedsDisplay];
+    CGRect frame = CGRectMake(20, 400, 80, 40);
+    UILabel * label1 = [[UILabel alloc]initWithFrame:frame];
+    label1.text = @"latitude";
+    label1.backgroundColor = [UIColor yellowColor];
+    UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(20, 450, 80, 40)];
+    label2.text = @"longitude";
+    label2.backgroundColor = [UIColor yellowColor];
+    self.latitudeLabel = [[UILabel alloc]initWithFrame:CGRectMake(120, 400, 80, 40)];
+    self.latitudeLabel.backgroundColor = [UIColor yellowColor];
+    self.longitudeLabel = [[UILabel alloc]initWithFrame:CGRectMake(120, 450, 80, 40)];
+    self.longitudeLabel.backgroundColor = [UIColor yellowColor];
+    NSArray * labelArr = [[NSArray alloc]initWithObjects:label1,label2,self.latitudeLabel,self.longitudeLabel, nil];
+    for (int i = 0; i<labelArr.count; i++) {
+        [self.view addSubview:labelArr[i]];
+    }
+    
     
     
 //    [self.tv shouldChangeTextInRange:[NSMakeRange(0, 200)] replacementText:self.tv.text];
@@ -56,7 +74,8 @@
 
 - (void)addLocation{
     UserLocationViewController * userLocationVC = [[UserLocationViewController alloc]init];
-    [self presentViewController:userLocationVC animated:YES completion:nil];
+    userLocationVC.delegate = self;
+    [self.navigationController pushViewController:userLocationVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

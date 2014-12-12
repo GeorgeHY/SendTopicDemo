@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "ViewController.h"
 @interface UserLocationViewController : UIViewController <CLLocationManagerDelegate>
 
 @property (nonatomic,strong) CLLocationManager *locationManager;
-
+@property (nonatomic, strong) ViewController * delegate;
 
 @end
